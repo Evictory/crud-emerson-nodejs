@@ -1,0 +1,17 @@
+{
+	"type": "postgres",
+	"host": "localhost",
+	"port": xxxx,
+	"username": "postgres",
+	"password": "bootcamp",
+	"database": "crudMilton",
+	"entities": [
+		"./src/models/*.ts"
+	],
+	"migrations": [
+		"./src/database/migrations/*.ts"
+	],
+	"cli": {
+		"migrationsDir": "./src/database/migrations"
+	}
+}
