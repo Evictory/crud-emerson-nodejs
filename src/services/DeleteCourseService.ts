@@ -11,6 +11,6 @@ export default class DeleteCourseService {
 			throw new Error('This id does not exists');
 		};
 
-		coursesRepository.delete(idExists);
+		coursesRepository.remove(idExists);
 	};
 };

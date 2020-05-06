@@ -4,8 +4,10 @@ import routes from './routes';
 import 'reflect-metadata';
 import './database/index';
 
+const cors = require('cors');
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
