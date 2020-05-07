@@ -41,7 +41,7 @@ coursesRoute.post('/', async(request, response) => {
 			courseName,
 			university
 		});
-		return response.status(204).json({ course });
+		return response.json(course).status(201);
 
 	} catch (err) {
 		return response.status(400).json({ error: err.message });
